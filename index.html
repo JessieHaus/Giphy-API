@@ -15,18 +15,16 @@
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+   
     <!-- Link JavaScript here --> 
     <script type="text/javascript" src="app.js"></script>
     
 </head>
 <body>
     <!-- Header  -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Cosmos: A Spacetime Odyssey <br /> Presented by Neil deGrasse Tyson</h1>
+    <div id ="header">
+        <font color ="yellow"><h1>Cosmos: A Spacetime Odyssey <br /> Presented by Neil deGrasse Tyson</h1></font>
         </div>
-    </div>
     <!-- Buttons  -->
     <div id="gifButtonsView" class="container">
     </div>
@@ -36,24 +34,19 @@
             <!-- Gifs  -->
             <div id="gifsView"></div>
         </div>
-         <!-- Action Submission Form  -->
+         <!-- New Button Submission Form  -->
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
             <form id="gif-form" role="form">
-                <h2><legend>Submit your SCIENCE</legend></h2>
+                <h2><legend>Make a new button</legend></h2>
                 <div class="form-group">
-                    <label for="action-input">Submit your science below</label>
+                    <label for="action-input">Submit new button you want below </label>
                     <input type="text" id="action-input">
                 </div>
-                <input id="addGif" type="submit" value="Type in a new SCIENCE" class="btn btn-primary">
-                <input id="removeGif" type="submit" value="Remove a science :( " class="btn btn-primary">
+                <input id="addGif" type="submit" value="Submit" class="btn btn-primary">
             </form>    
         </div>
     </div>
-    <footer>
-        <div id="footer" class="container">
-           
-        </div>
-    </footer>
+   
     
     
 

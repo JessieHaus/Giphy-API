@@ -1,12 +1,18 @@
 body{
-	background: url("../images/background.jpg");
-	background-size: 100%;
-    background-repeat: no-repeat;
-    color: black;
+	background: url("images/Neil.jpg");
+    background-repeat: repeat;
+    background-size: 100px;
+    
+    
 }
-* {
-	box-sizing: border-box;
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight:bold;
+    border-color: black;
 }
+
 img { 
     height: 150px;
     width: 150px;
@@ -14,33 +20,26 @@ img {
 .btn {
     /* adding spacing between each button*/
     margin: 3px;
-    background-color: #999999;
-    border-color: #fff;
+    background-color: black;
+    border-color:yellow;
 }
 .gifDiv{
-    /* making the images go in one line rather than block & adding spacing between the images*/
     float: left;
     margin: 3px;
+   
 }
 .container {
-	background-color: #fff;
+	background-color:yellow;
 	opacity: 0.8;
 	padding: 20px;
 }
-.jumbotron {
-    background-color: inherit;
-}
-.jumbotron .h1, .jumbotron h1 {
+
+.header {
+    font:white;
+    font-weight: bold;
     text-align: center;
 }
-#copyright{
-	font-size: 14px;
-}
-div#footer {
-	clear: both;
-	margin-top: 40px;
-	position: center;
-	bottom: 0;
-	left: 0;
-	text-align: center;
-}
+
+
+
+

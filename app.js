@@ -2,17 +2,17 @@
 
 $(document).ready(function() {
     // create an array with different Cosmos-themed buttons
-    var actions = ["Neil deGrasse Tyson", "Cosmos", "Asteroid", "DNA", "Tardigrade", "Astrophysics", "Astronomy", "Oort Cloud", "Halley's Comet", "Black Hole","Red Giant", "Hypernova", "Plate Tectonics"];
+    var buttons = ["Neil deGrasse Tyson", "Cosmos", "Asteroid", "DNA", "Tardigrade", "Astrophysics", "Astronomy", "Oort Cloud", "Halley's Comet", "Black Hole","Red Giant", "Hypernova", "Plate Tectonics"];
     // Creating Functions & Methods
     // Function that displays all gif buttons
     function displayGifButtons(){
         $("#gifButtonsView").empty(); // erasing anything in this div id so that it doesnt duplicate the results
-        for (var i = 0; i < actions.length; i++){
+        for (var i = 0; i < buttons.length; i++){
             var gifButton = $("<button>");
             gifButton.addClass("action");
             gifButton.addClass("btn btn-primary")
-            gifButton.attr("data-name", actions[i]);
-            gifButton.text(actions[i]);
+            gifButton.attr("data-name", buttons[i]);
+            gifButton.text(buttons[i]);
             $("#gifButtonsView").append(gifButton);
         }
     }
@@ -23,7 +23,7 @@ $(document).ready(function() {
         if (action == ""){
           return false; // added so user cannot add a blank button
         }
-        actions.push(action);
+        buttons.push(action);
     
         displayGifButtons();
         return false;
@@ -34,7 +34,7 @@ $(document).ready(function() {
         // rather than just the last
     function removeLastButton(){
         $("removeGif").on("click", function(){
-        actions.pop(action);
+        buttons.pop(action);
         displayGifButtons();
         return false;
         });
